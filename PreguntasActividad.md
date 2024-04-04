@@ -8,7 +8,7 @@ Recibe una cadena
 Utiliza la funcion split para divir la cadena cada vez que haya un espacio en blanco 
 El metodo reverse nos invierte los datos de los string 
 El metodo join() nos combina la todos los elemntos separados por un espacio y los une en un string
-Los "===" pregunat si son iguales y devuelve un booleano
+Los "===" pregunta si son iguales y devuelve un booleano
 
 Dé al menos un ejemplo de su uso (sin codificar nada).
 Recibe = "adan nada"
