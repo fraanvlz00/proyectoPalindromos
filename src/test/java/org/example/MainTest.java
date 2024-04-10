@@ -1,6 +1,6 @@
 package org.example;
 
-import org.junit.jupiter.api.Assertions;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,14 +8,22 @@ class MainTest {
 
     @org.junit.jupiter.api.Test
     void hacerCadaLetraMinuscula() {
+        assertEquals("abcdefghijklmnñopqrstuvxyz", Main.hacerCadaLetraMinuscula("ABCDEFGHIJKLMNÑOPQRSTUVXYZ"));
+    }
+
+    @org.junit.jupiter.api.Test
+    void hacerCadenaIdonea() {
+        assertEquals("hola", Main.hacerCadenaIdonea("H##$o[¨[¨**L   ,.,-´{´0897895a"));
+        assertEquals("", Main.hacerCadenaIdonea("   3552352532$%#%#,.,---:;:$"));
     }
 
     @org.junit.jupiter.api.Test
     public void testEsPalindromo() {
-        String input = "xdx";
-        boolean expected = true;
-        boolean actual = Main.esPalindromo(input);
-        Assertions.assertEquals(expected, actual);
+        assertEquals(false, Main.esPalindromo("200"));
+        assertEquals(true, Main.esPalindromo("aaabccbaaa"));
+        assertEquals(false, Main.esPalindromo("ahabccbaaa"));
+        assertEquals(false, Main.esPalindromo("La tele letal"));
+        assertEquals(true, Main.esPalindromo(""));
     }
 
 }

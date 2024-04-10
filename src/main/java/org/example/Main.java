@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.*;
 
@@ -11,7 +10,7 @@ public class Main {
         return cadena.toLowerCase();
     }
 
-    public static String _hacerCadenaIdonea(String cadena){
+    public static String hacerCadenaIdonea(String cadena){
         String resultado = cadena.replaceAll("[^a-zA-Z]", "");
 
         resultado = hacerCadaLetraMinuscula(resultado);
@@ -47,24 +46,9 @@ public class Main {
         return cadena;
     }
 
-    public static String validarCadena(){
-        Scanner teclado = new Scanner(System.in);
-        String resultado = "";
-        try {
-            resultado = teclado.nextLine();
-            if (resultado.trim().isEmpty()) {
-                throw new IllegalArgumentException("No se ha ingresado ninguna cadena");
-            }
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-            System.exit(0);
-        }
-        return resultado;
-    }
 
     public static void main(String[] args){
-        validarCadena();
-        imprimir(esPalindromo(_hacerCadenaIdonea(Ingresarcadena())));
+        imprimir(esPalindromo(hacerCadenaIdonea(Ingresarcadena())));
     }
 
 }
