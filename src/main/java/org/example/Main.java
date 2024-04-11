@@ -16,7 +16,7 @@ public class Main {
         resultado = hacerCadaLetraMinuscula(resultado);
 
         return resultado;
-S
+
     }
 
     public static Boolean esPalindromo(String cadena){
@@ -38,7 +38,7 @@ S
             System.out.println("Es palindromo");
         }else{
             System.out.println("No es palindromo");
-        }
+        }sss
     }
     public static String Ingresarcadena(){
         Scanner teclado = new Scanner(System.in);

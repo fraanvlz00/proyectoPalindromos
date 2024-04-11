@@ -15,7 +15,7 @@ class MainTest {
     void hacerCadenaIdonea() {
         assertEquals("hola", Main.hacerCadenaIdonea("H##$o[¨[¨**L   ,.,-´{´0897895a"));
         assertEquals("", Main.hacerCadenaIdonea("   3552352532$%#%#,.,---:;:$"));
-        B
+
     }
 
     @org.junit.jupiter.api.Test
@@ -25,6 +25,6 @@ class MainTest {
         assertEquals(false, Main.esPalindromo("ahabccbaaa"));
         assertEquals(false, Main.esPalindromo("La tele letal"));
         assertEquals(true, Main.esPalindromo(""));
-    }
+    }sss
 
 }
