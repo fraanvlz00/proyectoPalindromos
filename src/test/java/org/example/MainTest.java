@@ -25,6 +25,6 @@ class MainTest {
         assertEquals(false, Main.esPalindromo("ahabccbaaa"));
         assertEquals(false, Main.esPalindromo("La tele letal"));
         assertEquals(true, Main.esPalindromo(""));
-    }sss
+    }
 
 }

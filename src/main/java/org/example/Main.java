@@ -38,7 +38,7 @@ public class Main {
             System.out.println("Es palindromo");
         }else{
             System.out.println("No es palindromo");
-        }sss
+        }
     }
     public static String Ingresarcadena(){
         Scanner teclado = new Scanner(System.in);
