@@ -16,7 +16,7 @@ public class Main {
         resultado = hacerCadaLetraMinuscula(resultado);
 
         return resultado;
-
+S
     }
 
     public static Boolean esPalindromo(String cadena){
